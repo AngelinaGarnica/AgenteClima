@@ -1,8 +1,8 @@
-# Proyecto de Agente de IA con LangChain, LangGraph, API de Clima y Bot de Telegram
+# 🤖🌦️🌡️ Proyecto de Agente de IA con LangChain, LangGraph, API de Clima y Bot de Telegram
 
 Este proyecto es una base para crear agentes inteligentes usando LangChain, LangGraph y consultar información meteorológica a través de una API de clima. Además, integra un modelo Prophet para predicción de ventas y un bot de Telegram para interacción directa.
 
-## Estructura sugerida
+## 📁 Estructura sugerida
 
 - `main.py`: Ejecución local del agente, clima, pronóstico y predicción de ventas.
 - `api_interaction/weather_agent.py`: Lógica del agente y conexión con la API de clima usando LangGraph.
@@ -13,13 +13,12 @@ Este proyecto es una base para crear agentes inteligentes usando LangChain, Lang
 - `requirements.txt`: Dependencias del proyecto.
 - `Dockerfile` y `docker-compose.yml`: Para ejecución en contenedor Docker.
 
-## Uso rápido
+## ⚙️ Uso rápido
 
 ### 1. Variables de entorno
 Crea un archivo `.env` con tus claves de API:
 
 ```env
-OPENAI_API_KEY=tu_clave_openai
 GOOGLE_API_KEY=tu_clave_gemini
 WEATHER_API_KEY=tu_clave_weather
 TELEGRAM_TOKEN=tu_token_telegram
@@ -60,7 +59,7 @@ docker compose up --build
 
 El bot de Telegram quedará corriendo en el contenedor.
 
-## Dependencias principales
+## 🛠️ Dependencias principales
 - langchain
 - langgraph
 - langchain-google-genai
@@ -71,7 +70,7 @@ El bot de Telegram quedará corriendo en el contenedor.
 - prophet
 - plotly (opcional, para evitar warnings de Prophet)
 
-## Notas
+## 📜 Notas
 - El agente ahora usa LangGraph y Gemini 2.0 Flash como LLM.
 - El bot de Telegram responde automáticamente con clima, pronóstico y predicción de ventas.
 - El flujo es robusto: si no se puede obtener el clima, no se realiza la predicción de ventas.
