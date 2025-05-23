@@ -1,0 +1,11 @@
+langchain
+langgraph
+openai
+requests
+python-dotenv
+langchain-google-genai
+pandas
+prophet
+scikit-learn
+plotly
+pyTelegramBotAPI
